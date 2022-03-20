@@ -2,10 +2,6 @@
   "name": "wa-inbox",
   "version": "1.0.0",
   "description": "Gmail inbox client for WhatsApp.",
-  "main": "main.js",
-  "scripts": {
-    "start": "node main.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bunnykek/WA-INBOX.git"
