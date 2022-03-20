@@ -1,0 +1,36 @@
+{
+  "name": "wa-inbox",
+  "version": "1.0.0",
+  "description": "Gmail inbox client for WhatsApp.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunnykek/WA-INBOX.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "heroku",
+    "gmail",
+    "inbox"
+  ],
+  "author": "bunny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bunnykek/WA-INBOX/issues"
+  },
+  "homepage": "https://github.com/bunnykek/WA-INBOX#readme",
+  "dependencies": {
+    "@googleapis/gmail": "^0.3.1",
+    "dotenv": "^16.0.0",
+    "googleapis": "^96.0.0",
+    "mongodb": "^4.4.1",
+    "nodejs-base64": "^2.0.0",
+    "prompt-sync": "^4.2.0",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.16.4"
+  }
+}
