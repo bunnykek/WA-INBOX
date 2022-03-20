@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { Client, LegacySessionAuth } = require('whatsapp-web.js');
-const { connect_to_db, UpdateMessage_ID, mongodb_initialize } = require('./MongoDB');
+const { connect_to_db, UpdateMessage_ID, mongodb_initialize } = require('Scripts/MongoDB');
 const { GetMessage, ListMessages, GetUpdates } = require('./GmailAPI');
 require('dotenv').config();
 
