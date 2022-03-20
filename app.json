@@ -32,7 +32,7 @@
         },
         "owner": {
             "description": "The person who wants to receive the email-messages. Ex: 919756xxx890 (exclude plus sign)",
-            "value": "916789054689"
+            "value": "9167xxxxxx89"
         },
         "ignore_links": {
             "description": "true, if you want to ignore agressive hyperlinks. Improves readability.",
