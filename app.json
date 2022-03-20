@@ -31,7 +31,7 @@
             "value": "{\"WABrowserId\":\"\"xxxxxxxx..........}"
         },
         "owner": {
-            "description": "The person who wants to receive the email-messages. Ex: 919756xxx890 (exclude plus sign)",
+            "description": "The person who wants to receive the email-messages. Ex: 919756xxx890 (including country code but exclude plus sign)",
             "value": "9167xxxxxx89"
         },
         "ignore_links": {
