@@ -1,3 +1,5 @@
+//by bunny
+
 const { Client, LegacySessionAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 

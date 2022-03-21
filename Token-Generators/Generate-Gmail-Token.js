@@ -1,3 +1,5 @@
+//by bunny
+
 const {google} = require('googleapis');
 
 const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
@@ -26,7 +28,6 @@ function getNewToken(oAuth2Client) {
       oAuth2Client.getToken(code, (err, token) => {
         if (err) return console.error('Error retrieving access token', err);
         oAuth2Client.setCredentials(token);
-        // Store the token to disk for later program executions
         console.log(token);
       });
     });

@@ -1,3 +1,5 @@
+//by bunny
+
 const fs = require('fs');
 const readline = require('readline');
 const { google } = require('googleapis');
@@ -76,8 +78,6 @@ ${tags}`
 }
 
 
-
-////////////////////////////////////////////////////////////////////////////////////////
 async function GetUpdates(current_id) {
   var Messages_ids = new Array();
   Messages_ids = await ListMessages().then((k) => { return (k) });
@@ -93,7 +93,6 @@ async function GetUpdates(current_id) {
   return (fresh_ids)
 
 };
-/////////////////////////////////////////////////////////////////////////////////
 
 
 module.exports = { GetMessage, ListMessages, GetUpdates }
