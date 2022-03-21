@@ -59,7 +59,12 @@ const GetMessage = async (message_id) => {
   try {
     main_body = base64decode(res.data.payload.parts[0].body.data.toString());
   } catch {
-    main_body = base64decode(res.data.payload.parts[0].parts[0].body.data.toString());
+    try {
+      main_body = base64decode(res.data.payload.parts[0].parts[0].body.data.toString());
+    }
+    catch{
+      main_body = base64decode(res.data.payload.body.data.toString());
+    }
   }
 
   if (process.env.ignore_links == 'true') {
