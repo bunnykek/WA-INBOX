@@ -4,6 +4,10 @@
 
 - Forwards new arrived emails from Gmail to WhatsApp.
 
+It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocked.
+
+`NOTE:` I can't guarantee you will not be blocked by using this method, although it has worked for me and I personally never got blocked. WhatsApp does not allow bots or unofficial clients on their platform, so this shouldn't be considered totally safe.
+
 ## How to use?
 
 First of all we have to grab tokens from these three services, Google Cloud Platform, WhatsApp-web, MongoDB.   
@@ -24,3 +28,7 @@ Make sure to go to the deployed application's `Resources` tab and disable the `w
       
 There are only two commands:`!start` and `!ping`       
 After the successful deploy you `must have to` send `!start` to the bot using the owner's whatsapp.
+
+## Credits
+[whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js/) the bot is completely based on this library.    
+[Google Cloud Platform](https://console.cloud.google.com/) for Gmail API.
