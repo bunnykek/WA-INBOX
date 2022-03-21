@@ -12,12 +12,21 @@ It uses Puppeteer to run a real instance of Whatsapp Web to avoid getting blocke
 
 First of all we have to grab tokens from these three services, Google Cloud Platform, WhatsApp-web, MongoDB.   
 The procedures are given in WiKi tab.   
-[1. Getting Gmail tokens](https://github.com/bunnykek/WA-INBOX/wiki#1-getting-gmail-tokens)   
-[2. Getting WhatsApp web token](https://github.com/bunnykek/WA-INBOX/wiki#2-getting-whatsapp-web-token)   
-[3. MongoDB URL](https://github.com/bunnykek/WA-INBOX/wiki#3-mongodb-url)    
+[1. Getting Gmail tokens (client_id, client_secret, refresh_token)](https://github.com/bunnykek/WA-INBOX/wiki#1-getting-gmail-tokens)   
+[2. Getting WhatsApp web token (wa_token)](https://github.com/bunnykek/WA-INBOX/wiki#2-getting-whatsapp-web-token)   
+[3. MongoDB URL (url)](https://github.com/bunnykek/WA-INBOX/wiki#3-mongodb-url)    
 
-You can deploy it anywhere, all you need is [Node.js](https://nodejs.org/) and a VPS/RDP
-
+You can deploy it anywhere, all you need is [Node.js](https://nodejs.org/) and a VPS/RDP   
+Also make sure to add these environment variables:
+```
+client_id = ''  //Get it from credentials.json
+client_secret = '' //Get it from credentials.json
+refresh_token = '' //Get it from Generate-Gmail-Token
+url = '' //MongoDB url
+wa_token = '' //Whatsapp-web token
+owner = '' //The person who will receive the email-messages. Ex: 919756xxx890 (including country code but exclude plus sign)
+ignore_links = 'true'  //true, if you want to ignore agressive hyperlinks. Improves readability.
+```
 ## Heroku Deploy   
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bunnykek/WA-INBOX)
     
